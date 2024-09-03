@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap");
+
+body {
+    margin: 0;
+    font-family: Oswald;
+}
+
+/* universe */
+#universe {
+    height: 100vh;
+    width: 100vw;
+    /*     background: #00004d; */
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: black;
+}
+
+#sun,
+.orbit,
+.planet {
+    border-radius: 50%;
+}
+
+/* sun */
+#sun {
+    height: 100px;
+    width: 100px;
+    background: #141413;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    position: absolute;
+    box-shadow: 0 0 20px #141413;
+}
+
+/* orbits */
+.orbit {
+    position: absolute;
+    border: 1px solid rgba(179, 179, 179, 0.5);
+    
+}
+
+#orbit-A,
+#orbit-B,
+#orbit-C,
+#orbit-D,
+#orbit-E,
+#orbit-F,
+#orbit-G,
+#orbit-H,
+#orbit-i {
+    position: absolute;
+    border: 1px solid #ccc; /* Optional: for better visualization */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#orbit-A {
+    height: 140px;
+    width: 140px;
+    left: calc(50% - 70px);
+    top: calc(50% - 70px);
+    animation: planetOrbit 10s linear infinite;
+}
+
+#orbit-B {
+    height: 210px; /* Increased by 70px to maintain a 35px gap */
+    width: 210px;
+    left: calc(50% - 105px);
+    top: calc(50% - 105px);
+    animation: planetOrbit 10s linear infinite;
+}
+
+#orbit-C {
+    height: 280px; /* Increased by 70px */
+    width: 280px;
+    left: calc(50% - 140px);
+    top: calc(50% - 140px);
+    animation: planetOrbit 10s linear infinite;
+}
+
+#orbit-D {
+    height: 350px; /* Increased by 70px */
+    width: 350px;
+    left: calc(50% - 175px);
+    top: calc(50% - 175px);
+    animation: planetOrbit 10s linear infinite;
+}
+
+#orbit-E {
+    height: 420px; /* Increased by 70px */
+    width: 420px;
+    left: calc(50% - 210px);
+    top: calc(50% - 210px);
+    animation: planetOrbit 10s linear infinite;
+}
+
+#orbit-F {
+    height: 490px; /* Increased by 70px */
+    width: 490px;
+    left: calc(50% - 245px);
+    top: calc(50% - 245px);
+    animation: planetOrbit 10s linear infinite;
+}
+
+#orbit-G {
+    height: 560px; /* Increased by 70px */
+    width: 560px;
+    left: calc(50% - 280px);
+    top: calc(50% - 280px);
+    animation: planetOrbit 10s linear infinite;
+}
+
+#orbit-H {
+    height: 630px; /* Increased by 70px */
+    width: 630px;
+    left: calc(50% - 315px);
+    top: calc(50% - 315px);
+    animation: planetOrbit 10s linear infinite;
+}
+
+#orbit-i {
+    height: 700px; /* Increased by 70px */
+    width: 700px;
+    left: calc(50% - 350px);
+    top: calc(50% - 350px);
+    animation: planetOrbit 10s linear infinite;
+}
+
+/* .paused {
+} */
+
+.orbit {
+    /* Other styles */
+    animation-play-state: running; /* Default state */
+}
+
+@keyframes planetOrbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* planets */
+/* Planets */
+.planet {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 151px;
+    left: 200px;
+}
+.planet1 {
+    position: absolute;
+    top: 79%;
+    transform: translateX(-50%);
+}
+
+.planet2 {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 9;
+    top: 222px;
+    left: 98%;
+}
+
+.planet3 {
+    position: absolute;
+    left: -9%;
+    transform: translateX(-50%);
+}
+.planet4 {
+    position: absolute;
+    right: 91%;
+    transform: translateX(-50%);
+    top: 64%;
+}
+
+.planet5 {
+    top: 2%;
+    position: absolute;
+    left: 78%;
+    transform: translateX(-50%);
+}
+.planet6 {
+    position: absolute;
+    left: 51%;
+    transform: translateX(-50%);
+    bottom: 13px;
+}
+
+.planet7 {
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    top: -1px;
+}
+
+.planet8 {
+    position: absolute;
+    right: 278px;
+    transform: translateX(-50%);
+    bottom: -237px;
+}
+
+/* Planets */
+
+
+#mercury img {
+    height: 66px;
+    width: 66px;
+    top: 5%;
+    border-radius: 50%;
+}
+
+#venus img {
+    height: 55px;
+    width: 55px;
+    top: 15%;
+    border-radius: 50%;
+}
+
+#earth img {
+    height: 65px;
+    width: 65px;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+#mars img {
+    height: 90.5px;
+    width: 90.5px;
+    top: 35%;
+    border-radius: 50%;
+    z-index: 999;
+
+}
+
+#jupiter img {
+    height: 89px;
+    width: 89px;
+    top: 45%;
+    border-radius: 50%;
+}
+
+#saturn img {
+    height: 64px;
+    width: 64px;
+    top: 55%;
+    border-radius: 50%;
+}
+
+#uranus img {
+    height: 35px;
+    width: 35px;
+    top: 65%;
+    border-radius: 50%;
+
+}
+
+#neptune img {
+    height: 70px;
+    width: 70px;
+    top: 75%;
+    border-radius: 50%;
+}
+#neptune2 img {
+    height: 40px;
+    width: 40px;
+    top: 75%;
+    border-radius: 50%;
+}
+
+#neptune1 img {
+    height: 66px;
+    width: 66px;
+    top: 75%;
+    border-radius: 50%;
+}
+
+/* navbar */
+nav {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #a6a6a6;
+}
+
+nav button {
+    height: 100%;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    color: inherit;
+}
+
+nav button:hover {
+    color: white;
+}
+.planet9 {
+    position: relative; /* To create a positioning context for the button */
+}
+
+.planet9 button {
+    position: absolute;
+    left: 63%;
+    top: 350px;
+    border-radius: 50%;
+    padding: 0px 0px;
+    z-index: 999;
+    width: 20px;
+    height: 20px;
+    background-color: #86898D;
+    border: none;
+}
